@@ -12,7 +12,7 @@ public:
         //we will first replace the node with its next value
         node -> val = node -> next -> val;
         
-        //we will skip the the replaced value by making them same
+        //we will skip the the replace value by making them same
         node -> next = node -> next -> next;
     }
 };
