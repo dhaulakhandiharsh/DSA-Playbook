@@ -1,6 +1,6 @@
 # 📖 DSA-Playbook
 
-> A curated collection of **LeetCode solutions in C++**, built to showcase consistency, problem-solving skills, and mastery of **Data Structures & Algorithms**.
+> A curated collection of **LeetCode solutions in C++**, built to showcase consistency, problem solving skills, and mastery of **Data Structures & Algorithms**.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/furydh/DSA-Playbook?style=for-the-badge&color=blue)
 ![GitHub repo size](https://img.shields.io/github/repo-size/furydh/DSA-Playbook?style=for-the-badge&color=green)
@@ -10,7 +10,7 @@
 ---
 
 ## 🚀 About
-This repository serves as my **DSA practice archive** — auto-synced via **LeetHub**.  
+This repository serves as my **DSA practice archive**  auto synced via **LeetSync**.  
 It represents my journey of tackling **LeetCode problems**, refining approaches, and preparing for **technical interviews**.
 
 - 🔹 Written in **C++**  
@@ -30,4 +30,4 @@ It represents my journey of tackling **LeetCode problems**, refining approaches,
 ---
 
 ## 📂 Structure
-Problems are uploaded by **LeetHub** in the format:
+Problems are uploaded by **LeetSync** in the format:
