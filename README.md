@@ -3,7 +3,6 @@
 > A curated collection of **LeetCode solutions in C++**, built to showcase consistency, problem solving skills, and mastery of **Data Structures & Algorithms**.
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/furydh/DSA-Playbook?style=for-the-badge&color=blue)
-![GitHub repo size](https://img.shields.io/github/repo-size/furydh/DSA-Playbook?style=for-the-badge&color=green)
 ![LeetCode](https://img.shields.io/badge/Platform-LeetCode-orange?style=for-the-badge)
 ![Language](https://img.shields.io/badge/Language-C++-blue?style=for-the-badge)
 
