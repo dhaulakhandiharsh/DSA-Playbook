@@ -15,28 +15,20 @@ public:
         ListNode* B = headB;
 
         while(A != B){
-            //A = (A) ? A->next : headB;
+            A = (A) ? A->next : headB;
+            B = (B) ? B->next : headA;
 
-
-            if(A!=nullptr){
-                A = A->next;
-            }else{
-                A = headB;
-            }
-            if(B!=nullptr){
-                B = B->next;
-            }else{
-                B = headA;
-            }
-
+            // if(A!=nullptr){
+            //     A = A->next;
+            // }else{
+            //     A = headB;
+            // }
+            // if(B!=nullptr){
+            //     B = B->next;
+            // }else{
+            //     B = headA;
+            // }
             
-
-
-
-
-
-
-            //B = (B) ? B->next : headA;
         }
         return A;
     }
