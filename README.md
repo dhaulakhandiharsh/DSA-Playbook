@@ -2,7 +2,7 @@
 
 > A curated collection of **LeetCode solutions in C++**, built to showcase consistency, problem solving skills, and mastery of **Data Structures & Algorithms**.
 
-![GitHub last commit](https://img.shields.io/github/last-commit/furydh/DSA-Playbook?style=for-the-badge&color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/dhaulakhandiharsh/DSA-Playbook?style=for-the-badge&color=blue)
 ![LeetCode](https://img.shields.io/badge/Platform-LeetCode-orange?style=for-the-badge)
 ![Language](https://img.shields.io/badge/Language-C++-blue?style=for-the-badge)
 
@@ -24,7 +24,7 @@ It represents my journey of tackling **LeetCode problems**, refining approaches,
 [![LeetCode Stats](https://leetcard.jacoblin.cool/dhaulakhandiharsh?theme=dark&font=Source%20Code%20Pro&ext=heatmap)](https://leetcode.com/u/dhaulakhandiharsh/)
 
 ### 🟩 GitHub Contributions
-![GitHub Streak](https://streak-stats.demolab.com?user=furydh&theme=tokyonight&hide_border=true&border_radius=6)
+![GitHub Streak](https://streak-stats.demolab.com?user=dhaulakhandiharsh&theme=tokyonight&hide_border=true&border_radius=6)
 
 ---
 
