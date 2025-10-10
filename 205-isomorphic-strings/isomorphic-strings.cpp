@@ -1,23 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
         if(s.size() != t.size()) return false;
-        map<char,char> m1, m2;
-        for(int i = 0; i<s.size();i++){
-            if(m1.find(s[i]) != m1.end()){
-                if(m1[s[i]] != t[i]){
-                    return false;
-                }
-            }
-            else if(m2.find(t[i]) != m2.end()){
-                if(m2[t[i]] != s[i]){
-                    return false;
-                }
-            }
-            else{
-                m1[s[i]] = t[i];
-                m2[t[i]] = s[i];
-
+        array<int, 256> ms; ms.fill(-1);
+        array<int, 256> mt; mt.fill(-1);
+        for(size_t i = 0; i < s.size(); ++i){
+            unsigned char cs = s[i];
+            unsigned char ct = t[i];
+            if(ms[cs] == -1 && mt[ct] == -1){
+                ms[cs] = ct;
+                mt[ct] = cs;
+            } else {
+                if(ms[cs] != ct || mt[ct] != cs) return false;
             }
         }
         return true;
