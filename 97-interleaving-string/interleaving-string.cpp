@@ -10,8 +10,8 @@ public:
         for (int i = 1; i <= m; ++i) {
             dp[0] = dp[0] && (s1[i-1] == s3[i-1]);
             for (int j = 1; j <= n; ++j) {
-                bool fromS1 = dp[j] && (s1[i-1] == s3[i+j-1]);      // dp[j] currently holds dp[i-1][j]
-                bool fromS2 = dp[j-1] && (s2[j-1] == s3[i+j-1]);   // dp[j-1] holds dp[i][j-1]
+                bool fromS1 = dp[j] && (s1[i-1] == s3[i+j-1]);      
+                bool fromS2 = dp[j-1] && (s2[j-1] == s3[i+j-1]);   
                 dp[j] = fromS1 || fromS2;
             }
         }
