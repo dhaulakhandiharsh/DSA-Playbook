@@ -5,10 +5,9 @@ public:
         if (dividend == INT_MIN && divisor == -1) return INT_MAX;
         if (dividend == INT_MIN && divisor == 1) return INT_MIN;
 
-        // Determine sign of result
+    
         bool negative = (dividend < 0) ^ (divisor < 0);
 
-        // Convert both numbers to long to avoid overflow and make them positive
         long long a = labs(dividend);
         long long b = labs(divisor);
         long long result = 0;
