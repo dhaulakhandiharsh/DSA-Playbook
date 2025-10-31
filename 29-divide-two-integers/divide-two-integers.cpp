@@ -13,7 +13,7 @@ public:
         long long b = labs(divisor);
         long long result = 0;
 
-        // Subtract multiples of divisor using bit shifting
+        
         while (a >= b) {
             long long temp = b, multiple = 1;
             while (a >= (temp << 1)) {
