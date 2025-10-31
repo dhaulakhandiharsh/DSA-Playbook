@@ -24,10 +24,10 @@ public:
             result += multiple;
         }
 
-        // Apply sign
+
         if (negative) result = -result;
 
-        // Clamp result within 32-bit range
+    
         if (result > INT_MAX) return INT_MAX;
         if (result < INT_MIN) return INT_MIN;
         return (int)result;
