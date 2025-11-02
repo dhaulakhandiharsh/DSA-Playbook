@@ -23,12 +23,11 @@ public:
     ListNode* insertionSortList(ListNode* head) {
         if (!head || !head->next) return head;
 
-        ListNode* dummy = new ListNode(0); // dummy head for sorted part
+        ListNode* dummy = new ListNode(0); 
         dummy->next = head;
 
-        ListNode* lastSorted = head; // last node in sorted portion
-        ListNode* curr = head->next; // current node to insert
-
+        ListNode* lastSorted = head; 
+        ListNode* curr = head->next; 
         while (curr) {
             if (curr->val >= lastSorted->val) {
                 
