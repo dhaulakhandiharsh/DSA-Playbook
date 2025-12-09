@@ -22,14 +22,14 @@
 class Solution {
 public:
     TreeNode* searchBST(TreeNode* root, int val) {
-        if (!root) return nullptr;          // Not found
-        if (root->val == val) return root;  // Found
+        if (!root) return nullptr;          
+        if (root->val == val) return root;  
         
-        // If val is smaller → search left
+       
         if (val < root->val) 
             return searchBST(root->left, val);
         
-        // If val is larger → search right
+       
         return searchBST(root->right, val);
     }
 };
