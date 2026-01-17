@@ -3,27 +3,26 @@ public:
     bool lemonadeChange(vector<int>& bills) {
         int five = 0, ten = 0;
 
-        for (int i = 0; i < bills.size(); i++) {
-            if (bills[i] == 5) {
+        // for(int bills : bills)
+
+        for(int i=0; i<bills.size();i++){
+            if(bills[i] == 5){
                 five++;
-            } 
-            else if (bills[i] == 10) {
-                if (five > 0) {
-                    five--;
-                    ten++;
-                } else {
-                    return false;
-                }
-            } 
-            else { // bills[i] == 20
-                if (ten > 0 && five > 0) { 
+            }
+            else if( bills[i] == 10){
+                if(five == 0) return false;
+                five--;
+                ten++;
+            }
+            else{
+                if(ten>0 && five>0){
                     ten--;
                     five--;
-                } 
-                else if (five >= 3) {
+                }
+                else if(five >= 3){
                     five -= 3;
-                } 
-                else {
+                }
+                else{
                     return false;
                 }
             }
