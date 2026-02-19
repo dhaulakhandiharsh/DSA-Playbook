@@ -12,30 +12,36 @@
 class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
-        if (!root) return 0;
+        if (!root) {
+            return 0;
+        }
 
         long long ans = 0;
         queue<pair<TreeNode*, long long>> q;
+
         q.push({root, 0});
 
         while (!q.empty()) {
             int size = q.size();
-            long long minIndex = q.front().second;
+            long long mmin = q.front().second;  // normalize
+
             long long first, last;
 
             for (int i = 0; i < size; i++) {
-                auto [node, idx] = q.front();
+                long long cur_id = q.front().second - mmin; //to stop overflow marking index in level traversal from 0 to 1 
+                TreeNode* node = q.front().first;
                 q.pop();
 
-                idx -= minIndex;  // normalize
+                if (i == 0) first = cur_id;
+                if (i == size - 1) last = cur_id;
 
-                if (i == 0) first = idx;
-                if (i == size - 1) last = idx;
+                if (node->left) {
+                    q.push({node->left, 2 * cur_id + 1});
+                }
 
-                if (node->left)
-                    q.push({node->left, 2 * idx + 1});
-                if (node->right)
-                    q.push({node->right, 2 * idx + 2});
+                if (node->right) {
+                    q.push({node->right, 2 * cur_id + 2});
+                }
             }
 
             ans = max(ans, last - first + 1);
