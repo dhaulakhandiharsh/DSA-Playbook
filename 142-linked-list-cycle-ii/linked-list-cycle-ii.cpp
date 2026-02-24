@@ -17,16 +17,15 @@ public:
         while (fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
-            if (slow == fast) {  // cycle detected
-                // Step 2: Find cycle start
+            if (slow == fast) {  
                 slow = head;
                 while (slow != fast) {
                     slow = slow->next;
                     fast = fast->next;
                 }
-                return slow; // start of cycle
+                return slow; 
             }
         }
-        return nullptr; // no cycle
+        return nullptr; 
     }
 };
